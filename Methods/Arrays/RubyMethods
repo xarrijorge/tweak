@@ -2,7 +2,7 @@
 
 ## You can see the full list of Array methods available in Ruby 2.6.1 [HERE](https://ruby-doc.org/core-2.6.1/Array.html)
 
-* clear - deletes all elements from self. Returns Empty Array
+* _clear_ - deletes all elements from self. Returns Empty Array
    ``` a = [ "a", "b", "c", "d", "e"  ]
      a.clear    #=> [ ]
    ```
@@ -23,7 +23,7 @@
      n     => ["ant", "bat", "dog"]
      n.delete_at(99)   => nil // index is out of range
   ```
-* difference(n) - Returns a new array, removing any items that appear in both of the arrays given as arguments. The order is preserved from the original array.
+* diff(n) - Returns a new array, removing any items that appear in both of the arrays given as arguments. The order is preserved from the original array.
     ```
     [ 1, 1, 2, 2, 3, 3, 4, 5  ].difference([ 1, 2, 4  ])     => [ 3, 3, 5  ]
     [ 1, 'c', :s, 'yep'  ].difference([ 1  ], [ 'a', 'c'  ])  => [ :s, "yep"  ]
@@ -48,6 +48,7 @@
 * first
 * flatten
 * last
+* list - Lists all the content of an array
 * max
 * min
 * multiply
