@@ -1,9 +1,9 @@
 "use strict";
 
-Array.prototype.any = function(number) {
+Array.prototype.any = function(element) {
     let hasItem;
-    this.forEach(e => {
-        if (e === number) hasItem = true;
+    this.some(e => {
+        if (e === element) hasItem = true;
     });
     return hasItem ? true : false;
 };
