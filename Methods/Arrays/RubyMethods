@@ -2,6 +2,13 @@
 
 ## You can see the full list of Array methods available in Ruby 2.6.1 [HERE](https://ruby-doc.org/core-2.6.1/Array.html)
 
+* _any_ - Checks the array for an item. Returns true if the item exist or false otherwise.
+   ``` a = [ 1, 2, 2, 4, 7  ]
+     a.any(7)   #=> true
+     a.any(0)   #=> false
+   ```
+
+
 * _clear_ - deletes all elements from self. Returns Empty Array
    ``` a = [ "a", "b", "c", "d", "e"  ]
      a.clear    #=> [ ]
@@ -44,6 +51,9 @@
     a.fetch(-1)              => 44
     a.fetch(4, 'This isn't the index you're looking for')        => "this isn't the index you're looking for"
     ```
+
+
+
 * fill
 * first
 * flatten
@@ -59,3 +69,4 @@
 * transpose
 * unique
 * valuesAt
+
